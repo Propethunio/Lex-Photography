@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Lex Photography</title>
+  </head>
+  <body>
+    <div id="mobile-nav-bg"></div>
+    <nav id="navbar" class="navbar">
+      <a href="index.html"><img src="img/logo.png" alt="" class="logo" /></a>
+      <button href="#" id="hamburger" onclick="toggleSideMenu()">
+        <div></div>
+      </button>
+      <ul class="navbar-nav">
+        <li class="dropdown">
+          <a href="#">Shop</a>
+          <ul class="dropdown-content">
+            <li><a href="#">All</a></li>
+            <li><a href="#">Prints</a></li>
+            <li><a href="#">Sound FX</a></li>
+            <li><a href="#">Gear</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="side-menu">
+      <ul>
+        <li class="shop-btn" onclick="openShopMenu()">Shop</li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul id="shop-menu">
+        <li class="back-btn" onclick="closeShopMenu()">Back</li>
+        <li><a href="#">All</a></li>
+        <li><a href="#">Prints</a></li>
+        <li><a href="#">Sound FX</a></li>
+        <li><a href="#">Gear</a></li>
+      </ul>
+    </div>
+    <div class="new-prints">
+      <div class="shop-link">
+        <h1>New Prints</h1>
+        <a href="#">Shop →</a>
+      </div>
+    </div>
+    <div class="latest-gallery">
+      <h2>Latest collections</h2>
+      <div class="flex-wrapper">
+        <figure>
+          <img src="img/mountains.jpg" alt="mountains" />
+          <figcaption>Southern Mountains</figcaption>
+        </figure>
+        <figure>
+          <img src="img/town.jpg" alt="town" />
+          <figcaption>Evening Downtown</figcaption>
+        </figure>
+        <figure>
+          <img class="display-bottom" src="img/desert.jpg" alt="desert" />
+          <figcaption>Hot Desert</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="about-me-bg">
+      <div class="about-me">
+        <h2>Alexander Gill</h2>
+        <p>
+          Photographer & Filmmaker. Lover of coffee and travel. Currently
+          residing in California. Running channel on YouTube: Lex Photography
+        </p>
+      </div>
+    </div>
+    <footer class="footer">
+      <h2>Follow</h2>
+      <ul class="socials">
+        <li>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </li>
+      </ul>
+    </footer>
+    <script src="js/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/667664bdc4.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

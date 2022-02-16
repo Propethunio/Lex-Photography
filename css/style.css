@@ -1,0 +1,387 @@
+/* ----- GLOBAL ----- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-family: Lato, sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+h2 {
+  font-weight: 400;
+}
+/* ----- PAGE ----- */
+/* ----- NAV ----- */
+#mobile-nav-bg {
+  position: fixed;
+  left: 100%;
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  transition: 0.2s;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+}
+
+.logo {
+  width: 60px;
+  margin: 14px;
+  filter: invert(90%);
+}
+
+.navbar-nav {
+  display: none;
+}
+/* ----- HAMBURGER BUTTON ----- */
+#hamburger {
+  background-color: #000;
+  border: none;
+  width: 54px;
+  padding: 15px;
+  margin-right: 5px;
+}
+
+#hamburger:before,
+#hamburger div,
+#hamburger:after {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 3px;
+  border-radius: 3px;
+  margin: 4px 0;
+  transition: 0.5s;
+}
+.open:before {
+  transform: translateY(7px) rotate(135deg);
+}
+.open:after {
+  transform: translateY(-7px) rotate(-135deg);
+}
+.open div {
+  transform: scale(0);
+}
+/* ----- SIDE NAV ----- */
+#side-menu {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #3d3d3d;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+#side-menu ul {
+  padding: 55px 36px;
+}
+
+#side-menu li {
+  padding: 10px 0;
+}
+
+#side-menu a {
+  display: block;
+  width: 100%;
+}
+
+#shop-menu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 84%;
+  background-color: #3d3d3d;
+  transition: 0.2s;
+}
+
+#shop-menu a {
+  font: italic 400 1.5rem Lato;
+  white-space: nowrap;
+  letter-spacing: 1px;
+}
+/* ----- SIDE MENU ARROWS ----- */
+.shop-btn::after {
+  content: "\00BB";
+}
+
+.back-btn::after {
+  content: "\00AB";
+}
+
+.shop-btn::after,
+.back-btn::after {
+  padding-left: 4px;
+  font-family: sans-serif;
+  font-size: 2.5rem;
+  color: #0007;
+}
+/* ----- MAIN CONTENT ----- */
+.new-prints {
+  background: no-repeat center center;
+  background-size: cover;
+}
+
+.new-prints {
+  background-image: url(../img/beach.jpg);
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ----- NEW PRINTS LINK ----- */
+.shop-link {
+  width: 80%;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.shop-link h1 {
+  font-weight: 300;
+  letter-spacing: 10px;
+}
+
+.shop-link a {
+  display: inline-block;
+  margin: 5px 3px;
+  padding-bottom: 1px;
+  color: #bd9700;
+  font-weight: 700;
+  letter-spacing: 3px;
+  border-bottom: 1px solid #bd9700;
+  transition: 0.2s;
+}
+
+.shop-link a:hover {
+  color: #977900;
+  border-bottom-color: #977900;
+}
+/* ----- LATEST COLLECTION SECTION ----- */
+.latest-gallery {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.latest-gallery h2 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 15px;
+}
+
+.latest-gallery img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  margin: 10px 0;
+}
+
+.display-bottom {
+  object-position: bottom;
+}
+
+.latest-gallery figcaption {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+}
+/* ----- ABOUT ME ----- */
+.about-me-bg {
+  background: url(../img/lex.jpg) no-repeat fixed center 25%;
+  background-size: cover;
+  height: 80vh;
+}
+
+.about-me {
+  height: 100%;
+  width: 50%;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px #000, -1px -1px 1px #000;
+}
+
+.about-me h2 {
+  margin: 20px 10px;
+}
+
+.about-me p {
+  font-style: italic;
+  font-weight: 300;
+  margin: 0 10px;
+  line-height: 24px;
+}
+/* ----- FOOTER ----- */
+.footer {
+  text-align: center;
+  margin: 20px;
+}
+
+.footer h2 {
+  font-weight: 300;
+  letter-spacing: 8px;
+  margin: 20px;
+  font-size: 3rem;
+}
+
+.socials {
+  display: inline-flex;
+  justify-content: center;
+  padding: 0 40px;
+  margin-bottom: 30px;
+}
+
+.socials a {
+  font-size: 1.25rem;
+  margin: 0 10px;
+  padding: 10px;
+  color: #222;
+  transition: 0.5s;
+}
+
+.socials:hover a {
+  color: #bdbdbd;
+}
+
+.socials a:hover {
+  color: #222;
+}
+/* ----- MEDIA ----- */
+@media screen and (min-width: 640px) {
+  /* ----- NAV ----- */
+  #mobile-nav-bg,
+  #hamburger,
+  #side-menu {
+    display: none;
+  }
+
+  .navbar {
+    position: absolute;
+    background-color: transparent;
+    height: 90px;
+    padding: 0 35px;
+  }
+
+  .logo {
+    width: 85px;
+    filter: invert(30%);
+  }
+
+  .navbar-nav {
+    display: flex;
+  }
+
+  .navbar-nav a {
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+  }
+
+  .navbar-nav a:hover {
+    color: #bdbdbd;
+  }
+
+  .dropdown-content {
+    opacity: 0;
+    position: absolute;
+    padding: 18px 10px;
+    margin: 50px 0 0 -35px;
+    background-color: #fff;
+    transition: 0.5s;
+  }
+
+  .dropdown-content a {
+    display: block;
+    width: 100%;
+    padding: 8px 20px;
+    color: #000;
+    font-weight: 300;
+    text-shadow: 1px 1px 15px #000;
+  }
+
+  .dropdown:hover .dropdown-content {
+    opacity: 1;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  /* ----- ABOUT ME ----- */
+  .about-me {
+    height: 100%;
+    width: 30%;
+    margin-right: 20px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+
+  .about-me h2 {
+    margin: 20px 10px;
+    font-size: 1.75rem;
+  }
+
+  .about-me p {
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 300;
+    margin: 0 10px;
+    line-height: 35px;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  /* ----- LATEST COLLECTION SECTION ----- */
+  .flex-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .flex-wrapper figure {
+    width: 50%;
+  }
+
+  .flex-wrapper img {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar {
+    height: 110px;
+    padding: 0 65px;
+  }
+  /* ----- LATEST COLLECTION SECTION ----- */
+  .flex-wrapper figure {
+    width: 33.33%;
+    height: 30vh;
+    margin-bottom: 35px;
+  }
+}
