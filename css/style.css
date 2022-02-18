@@ -210,6 +210,7 @@ h2 {
   background: url(../img/lex.jpg) no-repeat fixed center 25%;
   background-size: cover;
   height: 80vh;
+  min-height: 380px;
 }
 
 .about-me {
@@ -306,6 +307,7 @@ h2 {
   }
 
   .dropdown-content {
+    z-index: -1;
     opacity: 0;
     position: absolute;
     padding: 18px 10px;
@@ -326,6 +328,7 @@ h2 {
   .dropdown:hover .dropdown-content {
     opacity: 1;
     margin-top: 10px;
+    z-index: 1;
   }
 }
 
